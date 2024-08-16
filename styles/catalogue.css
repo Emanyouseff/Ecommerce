@@ -1,0 +1,63 @@
+select{
+  border: none;
+  outline: none;
+
+}
+.select-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.details-selest{
+  padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    /* width: 15%; */
+    height: 40px;
+    display: flex;
+    margin-bottom: 40px;
+}
+label{
+  text-align: center;
+}
+
+.move-slides{
+  margin: 40px 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.move-slides button{
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0px 3px;
+}
+
+
+.move-slides button.active ,.move-slides button:hover{
+  background-color: #D9E8B6;
+  outline: none
+  ;
+} 
+
+.orang{
+  background-color: #EF9854;
+}
+
+.view{
+width: 50%;
+padding: 5px;
+text-transform: capitalize;
+border: none;
+cursor: pointer;
+border-radius: 20px 0;
+background-color:#D9E8B6;
+color: black;
+outline: none;
+}
+.view:hover{
+  background-color:  #b0c97b;
+}
