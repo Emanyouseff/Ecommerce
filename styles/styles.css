@@ -286,6 +286,6 @@ font-size: 18px;
 
 @media (max-width:350px) {
   .hamborger {
-    right: 1rem;
+    right:10px;
 }
 }
