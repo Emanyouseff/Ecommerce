@@ -16,39 +16,45 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-    />
+    /> 
+      <link rel="stylesheet" href="../styles/home.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/catalogue.css" />
-    <link rel="stylesheet" href="../styles/home.css" />
-    <title>Document</title>
+ 
+    <title>World of E-Commerce
+    </title>
   </head>
   <body>
     <header class="static-header">
-      <div class="header-title animation">
-        <p>Free shipping on U.S.orders $25 or more. 🌟</p>
-        <p>Free shipping on U.S. orders $25 or more. 🌟</p>
-        <p>Free shipping on U.S. orders $25 or more. 🌟</p>
-        <p>Free shipping on U.S. orders $25 or more. 🌟</p>
-        <p>Free shipping on U.S. orders $25 or more. 🌟</p>
+      <div class="header-title animation " id="titleMove">
       </div>
     </header>
     <nav class="navbar">
-      <ul>
-        <li class="main-title"><a  href="../index.html">gemash</a></li>
-        <li><a href="#">Payday Deals</a></li>
-        <li><a href="#">Best Seller</a></li>
-        <li><a href="#">Bottom</a></li>
-        <li><a href="#">Top</a></li>
-        <li><a href="#">Bags</a></li>
-        <li><a href="#">Accessories</a></li>
-        <div class="renix_icon">
-          <i class="ri-search-line"></i>
-          <i class="ri-user-fill"></i>
-          <i class="ri-shopping-cart-line"></i>
-        </div>
-       
-      </ul>
-    </nav>
+      <div class="media">
+       <div class="main-title">World of E-Commerce</div>
+       <div class="hamborger">
+         <span class="btn-hamborger"></span>
+         <span class="btn-hamborger"></span>
+         <span class="btn-hamborger"></span>
+       </div>
+      
+     </div>
+     <ul>
+       <div class="nav-links">
+         <li><a href="#" class="bg-brown">Payday Deals</a></li>
+         <li><a href="#">Best Seller</a></li> 
+          <li><a href="#">Top</a></li>
+         <li><a href="#">Bottom</a></li>
+         <li><a href="#">Bags</a></li>
+         <li><a href="#">Accessories</a></li>
+         <div class="renix_icon">
+           <i class="ri-search-line"></i>
+           <i class="ri-user-fill"></i>
+           <i class="ri-shopping-cart-line"></i>
+         </div></div>
+           
+         </ul>
+       </nav>
     <section>
       <p class="title">Payday Deals</p>
       <div class="select">
@@ -85,10 +91,10 @@
           <div class="details-selest">
             <label for="">Short By:</label>
             <select name="" class="product-filter3">
-              <option value="all">All</option>
-              <option value="">Denim Skirt</option>
+              <option value disabled selected >All Product</option>
+              <!-- <option value="">Denim Skirt</option>
               <option value="">Daisy Dress</option>
-              <option value="">Woll Cardigan</option>
+              <option value="">Woll Cardigan</option> -->
             </select>
           </div>
         </form>
@@ -137,8 +143,22 @@
               <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
+          <form>
+            <h3 class="raleway--font">Sign Up For Updates</h3>
+            <input
+              class="footer__email-input lexend--font"
+              type="email"
+              placeholder="Whats your email address?"
+              required
+            />
+            <input
+              class="footer__submit-input marginLeft raleway--font"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
         </nav>
-        <form>
+        <!-- <form>
           <h3 class="raleway--font">Sign Up For Updates</h3>
           <input
             class="footer__email-input lexend--font"
@@ -151,36 +171,37 @@
             type="submit"
             value="Subscribe"
           />
-        </form>
+        </form> -->
       </div>
       <span class="footer__bottom-horizontal-line" aria-hidden="true"></span>
       <div
-        class="footer__sub container flex items--center justify--between"
-        aria-label="Footer Subsection"
-      >
-        <p class="lexend--font">© Gemash V2 2023 all right reserved.</p>
-        <ul aria-label="Social Media Links">
-          <li>
-            <a href="#" aria-label="Facebook"
-              ><i class="ri-facebook-circle-fill"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Twitter"
-              ><i class="ri-twitter-x-line"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Instagram"
-              ><i class="ri-instagram-fill"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
-          </li>
-        </ul>
-      </div>
+      class="footer__sub container flex items--center justify--between"
+      aria-label="Footer Subsection"
+    >
+      <p class="lexend--font">© World of E-Commerce V2 2024 all right reserved.</p>
+      <ul aria-label="Social Media Links">
+        <li>
+          <a href="#" aria-label="Facebook"
+            ><i class="ri-facebook-circle-fill"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Twitter"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+        </li>
+      </ul>
+    </div>
     </footer>
+    
       <script src="../js/catalogue.js"></script>
     <script src="../js/home.js"></script>
   

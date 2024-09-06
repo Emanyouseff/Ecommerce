@@ -1,12 +1,4 @@
 
-/* .slider button{
-    border: none;
-    position: absolute;
-    bottom: 7%;
-    padding: 7px 7px;
-    background-color: rgb(255, 64, 0);
-    transform: translateX(-50%);
-} */
  .slides{
     margin: 0 40px;
  }
@@ -37,7 +29,7 @@
     cursor: pointer;
 }
 .btn-active{
-    background-color: #EF9854  !important;
+    background-color:#cd7108  !important;
 }
 
 .section-1 img{
@@ -46,9 +38,9 @@
 
 }
 .animation1{
-     background-color: #EF9854; 
+     background-color: #cd7108; 
        font-size: 30px;
-       font-weight:600;
+       font-weight:500;
         padding: 16px 0 ; 
          color: #060707;
   line-height: 1.5 ;
@@ -89,10 +81,15 @@ span{
     border-radius: 50%;
 }
 
-
+.cardsLifestyle{
+    display: grid; 
+     grid-template-columns: repeat(2,450px); 
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+}
 
 .cards{
-    /* display: flex; */
     display: grid; 
      grid-template-columns: repeat(4,200px);
     justify-content: center;
@@ -116,6 +113,10 @@ span{
     display: flex;
     justify-content: flex-start;
 }
+.stars img{
+    margin: 0 2px;
+}
+
 .stars p{
     color:#060707;
     font-weight: 700;
@@ -174,7 +175,7 @@ span{
     justify-content: space-around;
     align-content: center;
     width: 100%;
-    height:25rem;
+    /* height:25rem; */
 margin-bottom:3rem;
 }
 
@@ -252,19 +253,17 @@ border: 1px solid black;
  width: 60%;
 /* align-items: center; */
 }
-
+.m-b{
+    margin: 10px 0;
+}
 .section-5 .cards{
     /* width: 100%; */
-    margin: 0 40px;
+    /* margin: 0 40px; */
  display: grid;
- grid-template-columns: repeat(4,450px);
- justify-content: space-around;
- /* align-content: cem; */
-column-gap: 40px;
- /* overflow: hidden; */
- scroll-behavior: smooth;
- overflow-x: scroll;
- 
+ grid-template-columns: repeat(2,450px);
+ justify-content: center;
+ align-items: center;
+ column-gap: 20px;
 }
 .section-5 .cards::-webkit-scrollbar{
     margin-bottom: 20px;
@@ -279,13 +278,161 @@ column-gap: 40px;
     /* شعاع الزوايا */
 }
 .big-card {
-    width: 95%;
+    /* width: 95%; */
  justify-content: center;
-    padding: 10px;
+    padding: 20px;
     border: 2px solid black;
     margin: 20px 0px;
+
 }
 .big-card img{
     width: 100%;
-    height:300px
+    height:300px;
+    margin-bottom: 10px;
+}
+.left .ri-add-line{
+    padding:  0 30px;
+    font-size: 40px;
+}
+.renix_icon i{
+    cursor: pointer;
+}
+.renix_icon i:hover{
+color: #EF9854;
+}
+
+@media (max-width:930px) {
+    
+.cards{
+     grid-template-columns: repeat(3,250px);
+}
+.cardsLifestyle{
+    display: grid; 
+     grid-template-columns: repeat(2,400px); 
+    }
+}
+@media (max-width:870px) {
+.footer__top form {
+    flex-basis: 268px;
+}
+}
+
+@media (max-width:820px) {
+    .cards{
+        grid-template-columns: repeat(2,300px);
+   }
+   .colecation {
+  flex-direction: column;
+    }
+    .colecation-img{
+        margin: auto;
+        width: 80%;
+        margin-top: 40px;
+    }
+    .aria-hidden {
+        width: 35rem;
+    }
+    .footer__email-input ,.footer__submit-input {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .search{
+flex-direction: column;
+    }
+    .cardsLifestyle{
+        display: grid; 
+         grid-template-columns: repeat(1,600px); 
+        }
+        .all  {
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .marginLeft{
+        margin-left: 40px;
+    }
+       
+}
+
+@media (max-width:700px) {
+    .footer__top nav {
+    flex-wrap: wrap;
+}
+.footer__nav-column{
+ width: 30%;
+ justify-content: space-around;
+}
+.footer__sub{
+    display: grid;
+}
+form h3{
+   margin-top: 30px;
+}
+.footer__sub ul {
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer__top nav {
+    flex-grow:0;
+}
+.footer__email-input, .footer__submit-input {
+    /* margin: auto;  */
+    /* margin-top: 0px; */
+}
+.footer__top form {
+    /* flex-basis: 268px; */
+}
+form .lexend--font{
+    width: 100%;
+}
+}
+@media (max-width:650px) {
+    .cards{
+        grid-template-columns: repeat(1,450px);
+    }
+.footer__nav-column {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+   .aria-hidden {
+    width:28rem;
+}
+
+.cardsLifestyle {
+    /* display: grid; */
+    grid-template-columns: repeat(1,460px);
+}
+.all{
+    width: 20%;
+}
+/* .title{
+    width: 50%;
+} */
+}
+
+@media (max-width:470px) {
+    .cards{
+        grid-template-columns: repeat(1,300px);
+    }
+     .aria-hidden {
+        width:20rem;
+    }
+    .colecation-img {
+    width: 60%;
+}
+.cardsLifestyle {
+    grid-template-columns: repeat(1,300px);
+}
+.all{
+    width: 30%;
+}
+.title{
+    width: 50%;
+}
+.footer__sub {
+    font-size: 14px;
+}
 }

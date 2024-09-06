@@ -16,84 +16,173 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-    />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <title>Document</title>
+    /> 
+      <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/home.css">
+ 
+    <link rel="stylesheet" href="../styles/Checkout.css">
+    <link rel="stylesheet" href="../styles/payment.css">
+    <title>World of E-Commerce
+    </title>
   </head>
   <body>
-    <footer class="footer" aria-label="Website Footer">
-      <span class="footer__top-horizontal-line" aria-hidden="true"></span>
-      <div class="footer__top container flex justify--between">
-        <nav class="flex justify--between" aria-label="Footer Navigation">
-          <div class="footer__nav-column"aria-label="Catalog Section">
-            <h3 class="raleway--font">Catalog</h3>
-            <ul class="lexend--font flex flex--col">
-              <li><a href="#">Payday Deals</a></li>
-              <li><a href="#">Best Seller</a></li>
-              <li><a href="#">Bottom</a></li>
-              <li><a href="#">Top</a></li>
-              <li><a href="#">Bags</a></li>
-              <li><a href="#">Accessories</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav-column" aria-label="Customer Info Section">
-            <h3 class="raleway--font">Customer Info</h3>
-            <ul class="lexend--font flex flex--col">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Stockist</a></li>
-              <li><a href="#">Lifestyle</a></li>
-              <li><a href="#">FAQS</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">For Business</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav-column" aria-label="Legal Pages Section">
-            <h3 class="raleway--font">Legal Pages</h3>
-            <ul class="lexend--font flex flex--col">
-              <li><a href="#">Deliveries & Returns</a></li>
-              <li><a href="#">Term & Conditions</a></li>
-              <li><a href="#">Refund Policy</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </nav>
-        <form>
-          <h3 class="raleway--font">Sign Up For Updates</h3>
-          <input class="footer__email-input lexend--font"
-            type="email"
-            placeholder="Whats your email address?"
-            required
-          />
-          <input class="footer__submit-input raleway--font" type="submit" value="Subscribe" />
-        </form>
+    <nav class="navbar projectName">
+      <div class="media">
+       <div class="main-title ">World of E-Commerce</div>
+       </div>
+       </nav>
+ <section class="Checkout" >
+  <div class="leftPart">
+    <div class="way-payment">
+      <button>shipping</button>
+      <button class="bg">payment</button>
+    </div>
+    <div>
+      <h2>payment method</h2>
+        <div class="boxCircle">
+      <div class="check-Data">
+        <input type="checkbox" name="" id="cardCheckbox">
+        <span class="checkbox-circle"></span>
+        <p>Card</p>
       </div>
-      <span class="footer__bottom-horizontal-line" aria-hidden="true"></span>
-      <div
-        class="footer__sub container flex items--center justify--between"
-        aria-label="Footer Subsection"
-      >
-        <p class="lexend--font">© Gemash V2 2023 all right reserved.</p>
-        <ul aria-label="Social Media Links">
-          <li>
-            <a href="#" aria-label="Facebook"
-              ><i class="ri-facebook-circle-fill"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Twitter"
-              ><i class="ri-twitter-x-line"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Instagram"
-              ><i class="ri-instagram-fill"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
-          </li>
+        </div>
+        <div class="boxCircle">
+        <div class="check-Data">
+          <input type="checkbox" name="" id="paypalCheckbox">
+          <span class="checkbox-circle"></span>
+          <p>Paypal</p>
+        </div>
+          </div>
+    </div>
+    <div >
+      <input type="text" placeholder="Name On Card" class="selectWidth">
+      <input type="text" placeholder="Card Number" class="selectWidth">
+      <input type="text" placeholder="Expiry Date" class="selectWidth">
+      <input type="text" placeholder="CVC" class="selectWidth">
+    </div>
+    <button class="lastBtn finshed">Compelet Purchase</button>
+  </div>
+  <div class="part2">
+    <div class="dinamicAppear">
+   
+   </div> 
+      <div class="total">
+    <div class="price">
+     <p class="Subtotal">Subtotal</p>
+     <p class="cash"> $0</p>
+    </div>
+    <div class="price">
+     <p class="Discount">Discount</p>
+     <p class="noDiscount"> $0</p>
+    </div>
+    <div class="price">
+     <p class="Subtotal">Express Shipping</p>
+     <p class="charge"> $8</p>
+    </div>
+      </div>
+      <div class="totalMoney">
+       <div class="price">
+         <p class="Discount">Total</p>
+         <p class="shippingCash"> $8</p>
+       </div>
+      </div>
+   </div>
+ </section>
+ <footer class="footer" aria-label="Website Footer">
+  <span class="footer__top-horizontal-line" aria-hidden="true"></span>
+  <div class="footer__top container flex justify--between">
+    <nav class="flex justify--between" aria-label="Footer Navigation">
+      <div class="footer__nav-column" aria-label="Catalog Section">
+        <h3 class="raleway--font">Catalog</h3>
+        <ul class="lexend--font flex flex--col">
+          <li><a href="#">Payday Deals</a></li>
+          <li><a href="#">Best Seller</a></li>
+          <li><a href="#">Bottom</a></li>
+          <li><a href="#">Top</a></li>
+          <li><a href="#">Bags</a></li>
+          <li><a href="#">Accessories</a></li>
         </ul>
       </div>
-    </footer>
+      <div class="footer__nav-column" aria-label="Customer Info Section">
+        <h3 class="raleway--font">Customer Info</h3>
+        <ul class="lexend--font flex flex--col">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Stockist</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">For Business</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav-column" aria-label="Legal Pages Section">
+        <h3 class="raleway--font">Legal Pages</h3>
+        <ul class="lexend--font flex flex--col">
+          <li><a href="#">Deliveries & Returns</a></li>
+          <li><a href="#">Term & Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <form>
+        <h3 class="raleway--font">Sign Up For Updates</h3>
+        <input
+          class="footer__email-input lexend--font"
+          type="email"
+          placeholder="Whats your email address?"
+          required
+        />
+        <input
+          class="footer__submit-input marginLeft raleway--font"
+          type="submit"
+          value="Subscribe"
+        />
+      </form>
+    </nav>
+    <!-- <form>
+      <h3 class="raleway--font">Sign Up For Updates</h3>
+      <input
+        class="footer__email-input lexend--font"
+        type="email"
+        placeholder="Whats your email address?"
+        required
+      />
+      <input
+        class="footer__submit-input raleway--font"
+        type="submit"
+        value="Subscribe"
+      />
+    </form> -->
+  </div>
+  <span class="footer__bottom-horizontal-line" aria-hidden="true"></span>
+  <div
+  class="footer__sub container flex items--center justify--between"
+  aria-label="Footer Subsection"
+>
+  <p class="lexend--font">© World of E-Commerce V2 2024 all right reserved.</p>
+  <ul aria-label="Social Media Links">
+    <li>
+      <a href="#" aria-label="Facebook"
+        ><i class="ri-facebook-circle-fill"></i
+      ></a>
+    </li>
+    <li>
+      <a href="#" aria-label="Twitter"
+        ><i class="ri-twitter-x-line"></i
+      ></a>
+    </li>
+    <li>
+      <a href="#" aria-label="Instagram"
+        ><i class="ri-instagram-fill"></i
+      ></a>
+    </li>
+    <li>
+      <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+    </li>
+  </ul>
+</div>
+</footer>
+ <script src="../js/payment.js"></script>
+    <script src="../js/Checkout.js"></script>
+   
   </body>
 </html>

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Checkout{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+/* .check-Data .active{
+background-color: aqua;
+} */
+.way-payment button{
+    width: 25%;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.way-payment .bg{
+    background-color: #ED98DC;
+}
+.contactData h2{
+margin: 5px 0;
+}
+.inputData{
+    width: 100%;
+}
+.inputData input{
+    width: 250px;
+    padding: 7px;
+    margin: 10px 0px;
+    margin-right: 5px;
+}
+.shippingAddress h2{
+    margin: 20px 0;
+}
+.shippingDetails{
+    width: 100%;
+}
+.shippingDetails select ,.selectInput{
+    width: 250px;
+    padding: 7px;
+    margin: 10px 0px;
+    margin-right: 5px;
+}
+.selectWidth{
+    width: 510px;
+    padding: 7px;
+    margin: 10px 0px;
+}
+.boxCircle{
+    width:500px;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px 0;
+}
+.check-Data{
+    display: flex;
+}
+.check-Data input{
+    display: none;
+}
+.checkbox-circle {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    /* background-color: #D9E8B6; */
+}
+.checkbox-circle::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.projectName{
+    margin-top: 20px;
+}
+.Checkout .lastBtn{
+width: 510px;
+padding: 10px;
+margin: 10px 0;
+background-color: #D9E8B6;
+cursor: pointer;
+}
+
+.part2{
+border: 2px solid black;
+padding: 15px 10px;
+width: 100%;
+
+}
+.pop_product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+border-bottom: 2px solid black;
+}
+.pop_product img{
+    width: 30%;
+}
+.deyailsProduct{
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+.pop_product_details{
+    margin-left: 10px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.total{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+.totalMoney{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+@media (max-width:874px) {
+   .part1 {
+        width: 100%;
+    }
+    .selectWidth {
+        width: 265px;
+    }
+    .boxCircle {
+        width: 290px;
+    }
+    .Checkout .lastBtn {
+        width: 265px;
+        margin-bottom: 20px;
+    }
+        .way-payment button {
+            width: 40%;}
+}
+
+@media (max-width:700px) {
+    .Checkout {
+        text-align: center;
+        flex-direction: column;
+    }
+    .boxCircle {
+        width: 500px;
+    }
+}
+@media (max-width:590px) {
+    .inputData input ,.shippingDetails select {
+        width: 350px;}
+        .shippingDetails select, .selectInput {
+            width: 350px;} 
+            .selectWidth {
+            width: 350px;
+        }
+        .boxCircle {
+            width: 400px;
+            margin: auto;
+        }
+       
+}
+
+@media (max-width:460px) {
+    .boxCircle {
+        width: 270px;
+        margin: 10px 0;
+    }
+    .Checkout .lastBtn {
+        width: 165px;
+    }    
+    .inputData input, .shippingDetails select ,.selectInput, .selectWidth{
+    width: 270px;
+}
+}

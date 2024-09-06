@@ -1,7 +1,7 @@
 :root {
   /* Background color for the body */
   --body-bg-color: #fff8f0;
-
+scroll-behavior: smooth;
   /* Maximum width for the footer container */
   --footer-container-width: 1020px;
 
@@ -24,7 +24,7 @@
 
   /* footer social media links */
   --footer-social-links-color: #060707;
-  --footer-social-links-hover-color: #ef9854;
+  --footer-social-links-hover-color:#cd7108;
 }
 
 * {
@@ -99,6 +99,7 @@ ul {
   line-height: 1.5
   ;
 }
+
 .header-title {
   display: flex;
   flex-direction: row; 
@@ -106,40 +107,61 @@ ul {
 
 }
 
-/* .header-title i {
-  color: #ef9854;
-  margin-right: 10px;
-} */
  .main-title{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 25px;
+  text-transform:capitalize;
+  /* letter-spacing: 2px; */
+  font-size: 20px;
   /* font-weight:; */
  }
  .renix_icon{
 font-size: 18px;
  }
-.navbar {
+ .navbar {
   margin: 0 40px;
 }
-.navbar ul {
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+   padding: 5px 10px; 
+  border: 1px solid black;
+  position: relative;
+}
+.hamborger{
+  width: 1.875rem;
+  height: 1.330rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  right:1.5rem;
+  top:0.7rem;
+  cursor: pointer;
+  } 
+  .btn-hamborger{
+  height: 0.188rem;
+  width: 100%;
+  background-color: black;
+  transition: all ease-in-out 0.2s;
+  }
+.nav-links{
   display: flex;
   justify-content: space-between;
+  /* width: 70%; */
   align-items: center;
-  /* padding: 5px 0; */
-  border: 1px solid black;
+  font-size: 18px;
+  transition: all ease-in-out 0.2s;
 }
 .navbar ul li {
-  border-right: 2px solid black;
+  /* border-left: 2px solid black; */
   padding: 10px;
 }
-.navbar ul div {
-  display: flex;
-  padding: 10px;
+.nav-links  a:hover{
+  border-bottom: 2px solid #EF9854;
+  padding-bottom: 5px;
 }
-.navbar ul div i {
-  justify-content: space-between;
-  padding: 5px;
+.renix_icon{
+  padding: 10px;
 }
 
 .footer span {
@@ -150,7 +172,7 @@ font-size: 18px;
 }
 .footer__top {
   max-width: var(--footer-container-width);
-  gap: 61px;
+  /* gap: 61px; */
   padding-block: 40px;
 }
 .footer__top nav {
@@ -195,6 +217,7 @@ font-size: 18px;
   opacity: 0.25;
 }
 .footer__submit-input {
+  border-radius: 40px 0;
   border: 1px solid var(--footer-submit-button-border-color);
   background-color: var(--footer-submit-button-bg-color);
   padding: 10px 48px;
@@ -226,4 +249,37 @@ font-size: 18px;
 }
 .footer__sub a:hover {
   color: var(--footer-social-links-hover-color);
+}
+
+@media (max-width:930px) {
+  .hamborger{
+    display: flex;
+  }
+  .nav-links.active{
+  display:inline-block;
+
+  }
+  .nav-links a:hover{
+      border-bottom: 2px solid rgb(255, 166, 0);
+      padding-bottom: 5px;
+  }
+  .navbar {
+    display:grid;
+    padding: 10px;
+    column-gap: 10px;
+    position: relative;
+  
+  }
+  .nav-links{
+    display: none;
+  }
+  .hamborger.active :nth-child(1){
+  transform: rotate(45deg) translate(0.45rem,0.1075rem) ;
+  }
+  .hamborger.active :nth-child(2){
+   opacity: 0;
+    }
+    .hamborger.active :nth-child(3){
+      transform: rotate(-45deg) translate(0.45rem,-0.1075rem) ;
+      }
 }

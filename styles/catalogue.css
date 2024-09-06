@@ -3,6 +3,10 @@ select{
   outline: none;
 
 }
+ option{
+  width: 50%;
+  border-bottom: 3px solid red;
+}
 .select-form{
     display: flex;
     justify-content: center;
@@ -60,4 +64,43 @@ outline: none;
 }
 .view:hover{
   background-color:  #b0c97b;
+}
+
+
+@media (max-width:750px) {
+  .select-form {
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+  label{
+    width: 70%;
+    text-align: start;
+  }
+  .details-selest{
+    width: 40%;
+  }
+  select{
+    width: 100%;
+  }
+}
+
+@media (max-width:650px) {
+  .details-selest{
+    width: 60%;
+  }
+}
+
+
+@media (max-width:580px) {
+  .footer__sub {
+display: grid;
+  }
+}
+
+@media (max-width:420px) {
+  label{
+    width: 100%;
+    text-align: start;
+  }
 }

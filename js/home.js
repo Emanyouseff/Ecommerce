@@ -1,10 +1,56 @@
 
+const hamborger= document.querySelector('.hamborger')
+const linksContener=document.querySelector('.nav-links')
+const allLink=document.querySelectorAll('.nav-links li')
+hamborger.addEventListener('click',()=>{
+  linksContener.classList.toggle('active')
+  hamborger.classList.toggle('active')
+  
+})
 
+window.addEventListener('resize',()=>{
+  if(window.matchMedia('(max-width:930px)').matches){
+ closeMinue()
+  }
+
+})
+if(window.matchMedia('(max-width:930px)').matches){
+  closeMinue()
+}
+function  closeMinue(){
+allLink.forEach((item)=>{
+    // console.log(item);
+item.addEventListener('click',()=>{
+  linksContener.classList.remove('active')
+  hamborger.classList.remove('active')
+
+})
+})
+}
+const textMove='  Free shipping on U.S.orders $25 or more. 🌟'
+const count=4;
+const titleMove=document.querySelector('#titleMove')
+const textArray= Array.from({length:count},()=> textMove)
+titleMove.innerHTML= textArray.map(items=> `<p>${items}</p>`).join()
 // Get all inner-div elements
 const cards = document.querySelectorAll('.card');
 
+const starsContainer = document.querySelectorAll('.stars-container');
+const numberOfStars = 5; // عدد النجوم الذي تريده
+starsContainer.forEach((item)=>{
+  for (let i = 0; i < numberOfStars; i++) {
+  const img = document.createElement('img');
+  img.src = './images/rating-star.png';
+  img.alt = '';
+  item.appendChild(img);
+  
+}
+})
+
+
 // Loop through each inner-div
-cards.forEach(function(card) {
+function changImg(){
+  cards.forEach(function(card) {
     // Get all span-items within this inner-div
     const spanItems = card.querySelectorAll('.changimg');
 
@@ -17,7 +63,7 @@ cards.forEach(function(card) {
 console.log(spanItem);
             // Get the value of data-image-src attribute
             const imageSrc = spanItem.getAttribute('data-image-src');
-            // console.log(imageSrc);
+            console.log(imageSrc);
             // Change the main image source based on data-image-src
             if (imageSrc) {
               mainImage.style.opacity='0'
@@ -32,8 +78,10 @@ console.log(spanItem);
     });
 });
 
+} changImg()
 
-const text=document.querySelectorAll('.aria-hidden')
+function displayText(){
+  const text=document.querySelectorAll('.aria-hidden')
 console.log(text);
   const data=document.querySelectorAll('.text')
  text.forEach(function(item){
@@ -52,6 +100,8 @@ const content=item.querySelector('.text')
  
  })
 
+}
+displayText()
 const slider =document.querySelectorAll('.slidimg')
 // console.log(slider);
 const gotoslide=function(slide){
