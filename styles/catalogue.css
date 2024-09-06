@@ -1,6 +1,7 @@
 select{
   border: none;
   outline: none;
+  background-color:transparent;
 
 }
  option{
@@ -103,4 +104,7 @@ display: grid;
     width: 100%;
     text-align: start;
   }
+.details-selest {
+    width: 70%;
+}
 }

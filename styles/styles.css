@@ -283,3 +283,9 @@ font-size: 18px;
       transform: rotate(-45deg) translate(0.45rem,-0.1075rem) ;
       }
 }
+
+@media (max-width:350px) {
+  .hamborger {
+    right: 1rem;
+}
+}

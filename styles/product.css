@@ -184,6 +184,7 @@ padding: 5px;
 .two-button .code {
   width: 50%;
   text-align: center;
+  background-color: white;
 }
 .two-button .apply {
   width: 40%;
@@ -287,5 +288,14 @@ margin-top: 20px;
 }
 .popup{
   width: 80%;
+}
+.visible h2{
+font-size: 20px;
+}
+.widthReviews {
+  width: 60%;
+}
+.title {
+  width: 60%;
 }
 }
