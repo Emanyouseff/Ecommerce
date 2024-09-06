@@ -436,3 +436,8 @@ form .lexend--font{
     font-size: 14px;
 }
 }
+
+@media (max-width: 370px){
+.hamborger {
+    right: 10px;
+}}

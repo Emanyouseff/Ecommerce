@@ -108,3 +108,7 @@ display: grid;
     width: 70%;
 }
 }
+@media (max-width: 370px){
+.hamborger {
+    right: 10px;
+}}
