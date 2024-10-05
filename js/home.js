@@ -38,7 +38,7 @@ function fiveStar() {
     for (let i = 0; i < numberOfStars; i++) {
       const img = document.createElement("img");
       if (img) {
-        img.src = "../images/rating-star.png";
+        img.src = "./images/rating-star.png";
       }
 
       img.alt = "";
