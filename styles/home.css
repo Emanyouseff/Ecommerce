@@ -79,6 +79,7 @@ span{
     background-color: rgba(173, 117, 212, 0.99);
     width:25%;
     border-radius: 50%;
+    transition: all .4s ease-in-out;
 }
 
 .cardsLifestyle{
@@ -377,13 +378,6 @@ form h3{
 .footer__top nav {
     flex-grow:0;
 }
-.footer__email-input, .footer__submit-input {
-    /* margin: auto;  */
-    /* margin-top: 0px; */
-}
-.footer__top form {
-    /* flex-basis: 268px; */
-}
 form .lexend--font{
     width: 100%;
 }
@@ -402,15 +396,11 @@ form .lexend--font{
 }
 
 .cardsLifestyle {
-    /* display: grid; */
     grid-template-columns: repeat(1,460px);
 }
 .all{
     width: 20%;
 }
-/* .title{
-    width: 50%;
-} */
 }
 
 @media (max-width:470px) {
@@ -437,7 +427,16 @@ form .lexend--font{
 }
 }
 
-@media (max-width: 370px){
-.hamborger {
-    right: 10px;
-}}
+.likeProduct{
+    display: flex;
+    justify-content: space-between;
+}
+.likeProduct i{
+font-size: 20px;
+cursor: pointer;
+}
+.starlike{
+    height: 18px;
+    width: 18px;
+    /* background: linear-gradient(to right, #ffcc00 100%, transparent 10% ); */
+    clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35% ) }

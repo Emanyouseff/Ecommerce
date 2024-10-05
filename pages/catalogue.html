@@ -21,7 +21,6 @@
       <link rel="stylesheet" href="../styles/home.css" />
    
     <link rel="stylesheet" href="../styles/catalogue.css" />
- 
     <title>World of E-Commerce
     </title>
   </head>
@@ -62,9 +61,9 @@
         <form class="select-form">
           <div class="details-selest">
             <label for="">Product Type :</label>
-            <select name="" class="product-filter">
+            <select name="" class="product-filter0">
               <!-- <label for="">Product Type</label> -->
-              <option value="all">All</option>
+              <option value="allName">All</option>
               <option value="Denim Skirt">Denim Skirt</option>
               <option value="Daisy Dress">Daisy Dress</option>
               <option value="Woll Cardigan">Woll Cardigan</option>
@@ -74,7 +73,7 @@
           <div class="details-selest">
             <label for="">Size :</label>
             <select name="" class="product-filter1">
-              <option value="all">All</option>
+              <option value="allSize">All</option>
               <option value="small">small</option>
               <option value="large">large</option>
               <option value="extraLarge">extra large</option>
@@ -83,7 +82,7 @@
           <div class="details-selest">
             <label for="">Availability:</label>
             <select name="" class="product-filter2">
-              <option value="all">All</option>
+              <option value="allColor">All</option>
               <option value="Grey">Grey</option>
               <option value="Blue">Blue</option>
               <option value="Purple">Purple</option>
@@ -92,10 +91,12 @@
           <div class="details-selest">
             <label for="">Short By:</label>
             <select name="" class="product-filter3">
-              <option value disabled selected >All Product</option>
-              <!-- <option value="">Denim Skirt</option>
-              <option value="">Daisy Dress</option>
-              <option value="">Woll Cardigan</option> -->
+                <option value="allPrice">All</option>
+                <option value="70">price<=70</option>
+                <option value="90">price<=90</option>
+                <option value="100">price<=100</option>
+                <option value="120">price<120</option>
+              </select>
             </select>
           </div>
         </form>
@@ -203,7 +204,7 @@
     </div>
     </footer>
     
-      <script src="../js/catalogue.js"></script>
+      <script  src="../js/catalogue.js"></script>
     <script src="../js/home.js"></script>
   
   </body>

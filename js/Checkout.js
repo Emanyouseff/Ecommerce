@@ -53,7 +53,6 @@ total()
  })
  } 
     shippingCosts()
-    // console.log(indexed);
 
     function total(){
         const totalprice=localStorage.getItem('totalprice')
@@ -63,14 +62,16 @@ console.log(indexed);
   const suptotal=document.querySelector('.cash')
   const totalCost=document.querySelector('.shippingCash')
   const charge=document.querySelector('.charge')
-  console.log(charge);
+
   if(!indexed){
-    console.log(indexed);
       suptotal.innerHTML=`$${totalm}.00`;
       totalCost.innerHTML=`$${totalm}.00`;
+    
   }
-  else{
+  else{ 
+     charge.innerHTML='$8'
     totalCost.innerHTML=`$${totalm +8}.00`;
+
   }
   
     }

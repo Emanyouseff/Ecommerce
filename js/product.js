@@ -1,19 +1,14 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   const searchURL = new URLSearchParams(window.location.search);
   const findID = searchURL.get('id');
   let current = 1;
-  console.log(findID);
   
   if (findID) {
       const locadata = localStorage.getItem('allobjectdata');
       
       if (locadata) {
-          const convert = JSON.parse(locadata);
-          console.log(convert);
+          const convert = JSON.parse(locadata)
           const fined = convert.find(product => product.id === parseInt(findID));
-          
-          console.log(fined);
           
           if (fined) {
               const colorOptions = fined.colorsOptions || {};
@@ -116,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 changeImg()
 setupEventListeners()
 displayText()
-});
+ });
 
 let selectedImageSrc = '';
 function changeImg(){
@@ -144,17 +139,14 @@ function addToCart(id) {
       const products = JSON.parse(cartData);
    
       const product = products.find(prod => prod.id === parseInt(id));
-         console.log(product);
       if (product) {
           let cart = JSON.parse(localStorage.getItem('cartdata')) || [];
           if (selectedImageSrc) {
             product.productImage = selectedImageSrc;
         }
-        console.log(cart);
           cart.push(product); 
           localStorage.setItem('cartdata', JSON.stringify(cart));
           console.log('Product added to cart:', product);
-          console.log('Current cart:', cart);
           cartproduct(cart);
          totalPrice();
      cartDisplay()
@@ -166,7 +158,6 @@ function addToCart(id) {
 
 // دالة لعرض بيانات السلة
 function cartproduct(cart) {
-    console.log(cart);
   const popProduct = document.querySelector('.grid');
   popProduct.innerHTML = '';
   cart.forEach(e => {
@@ -188,11 +179,6 @@ function cartproduct(cart) {
           </div>
       `;
       totalPrice()
-//       let currenyPrice=document.querySelector('.currenyPrice')
-//   const exprement=  localStorage.getItem('totalprice')
-//   const con=JSON.parse(exprement)
-//     currenyPrice.innerHTML=`$${con.toFixed(2)}`;
-//     console.log(con);
   });
   
   
@@ -206,7 +192,6 @@ function getCart() {
   
   if (cartData) {
       const cart = JSON.parse(cartData);
-      console.log('Stored cart data:', cart);
       return cart;
   } else {
       console.log('No cart data found.');
@@ -228,7 +213,6 @@ function increaseQuantity(event) {
     if (productId) {
         if (current >= 1) {
             current++;
-            console.log(current);
             change.innerHTML = current;
             updateProductDetails(productId, current);
             updateCartQuantity(productId, current);
@@ -249,7 +233,6 @@ function decreaseQuantity(event) {
     if (productId) {
         if (current > 1) {
             current--;
-            console.log(current);
             change.innerHTML = current;
             updateProductDetails(productId, current);
             updateCartQuantity(productId, current);
@@ -299,15 +282,11 @@ function totalPrice(){
   let total=cart.reduce((sum,current)=>{
     return sum+(current.currentPrice*current.current)
   },0)
-  console.log(total);
   cart.push(total)
   
 localStorage.setItem('totalprice',JSON.stringify(total))
   currenyPrice.innerHTML=`$${total.toFixed(2)}`;
 } 
-// const tooo=totalPrice();
-// console.log(tooo);
-
 const overlay=document.querySelector('.overlayCard');
 const cart=document.querySelector('.popup ');
 const cartIcon=document.querySelector('.ri-shopping-cart-line');
@@ -326,22 +305,8 @@ close.addEventListener('click',cartNone)
 
 cartIcon.addEventListener('click',cartDisplay)
 
-
-const starsContainer = document.querySelectorAll('.stars-container');
-const numberOfStars = 5; // عدد النجوم الذي تريده
-starsContainer.forEach((item)=>{
-  for (let i = 0; i < numberOfStars; i++) {
-  const img = document.createElement('img');
-  img.src = '../images/rating-star.png';
-  img.alt = '';
-  item.appendChild(img);
-  
-}
-})
-
 function displayText(){
 const text=document.querySelectorAll('.aria-hidden')
-console.log(text);
   const data=document.querySelectorAll('.text')
  text.forEach(function(item){
 const arrow=item.querySelector('.arrow');
@@ -359,3 +324,32 @@ const content=item.querySelector('.text')
  
  })
 }
+
+// function starsData(){
+// const customerRivewd=`
+// <div class="Customerdata">
+//       <h2>Siska M - Verified Buyer</h2>
+//       <div class="stars "> 
+//         <div class="stars-container" >
+//         <img src='' alt="">
+//       </div>   
+//       </div>
+//      <p class="paddingp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ipsum ipsa similique cum amet eveniet! Fuga repellendus placeat ad magni nostrum? Nihil voluptatibus a minima distinctio doloribus ut quod itaque?
+//      </p>
+//      </div>
+//      `
+//      const starsContainer= document.querySelector('.stars-container')
+     
+// const CustomerReview=document.querySelector('.CustomerReview')
+// for(let i=0; i<3 ;i++){
+    
+//     for(let j=1 ;j<5 ;j++){
+//     starsContainer.src="../images/rating-star.png"
+//     console.log(i);
+//     }
+//     CustomerReview.innerHTML += `${customerRivewd}`
+
+//     //  fiveStar()
+// }
+// }
+// starsData()

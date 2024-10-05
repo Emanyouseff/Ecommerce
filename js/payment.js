@@ -3,7 +3,6 @@ checkData.forEach((e,i)=> {
     
 e.addEventListener('click',function(){
     if(i===1){
-        console.log('cycj');
     }
 })
 }
@@ -14,8 +13,6 @@ e.addEventListener('click',function(){
 function setupEventListeners() {
     const checkDataElements = document.querySelectorAll('.check-Data');
     const inputs = document.querySelectorAll('.selectWidth');
-
-    // النصوص التي سيتم استخدامها لتحديث الـ placeholder
     const placeholders = {
         'cardCheckbox': [
             'Name On Card',
@@ -34,12 +31,9 @@ function setupEventListeners() {
     checkDataElements.forEach(item => {
         item.addEventListener('click', function() {
             const checkbox = this.querySelector('input[type="checkbox"]');
-            const id = checkbox.id; // الحصول على الـ ID للعنصر الذي تم الضغط عليه
-            // التحقق مما إذا كان العنصر محدد
+            const id = checkbox.id; 
             if (checkbox.id) {
-                // تحديث الـ placeholders بناءً على ID العنصر الذي تم الضغط عليه
                 const newPlaceholders = placeholders[id] || [];
-                console.log(newPlaceholders);
                 inputs.forEach((input, index) => {
                     if (newPlaceholders[index]) {
                         input.placeholder = newPlaceholders[index];
@@ -50,7 +44,6 @@ function setupEventListeners() {
     });
 }
 
-// استدعاء الدالة لتفعيل الوظيفة
 setupEventListeners();
 
 

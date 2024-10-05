@@ -26,7 +26,9 @@ select{
 label{
   text-align: center;
 }
-
+  select option{
+  border-bottom: 2px solid red;
+ }
 .move-slides{
   margin: 40px 0;
   display: flex;
