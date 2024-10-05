@@ -178,7 +178,7 @@ function cartproduct(cart) {
           </div>
           </div>
       `;
-      totalPrice()
+      totalPrice();fiveStar();
   });
   
   
@@ -273,7 +273,6 @@ function updateProductDetails(id, newQuantity) {
     }
 }
 
-// تأكد من أن setupEventListeners يتم استدعاؤه عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', setupEventListeners);
 
 function totalPrice(){
@@ -325,31 +324,20 @@ const content=item.querySelector('.text')
  })
 }
 
-// function starsData(){
-// const customerRivewd=`
-// <div class="Customerdata">
-//       <h2>Siska M - Verified Buyer</h2>
-//       <div class="stars "> 
-//         <div class="stars-container" >
-//         <img src='' alt="">
-//       </div>   
-//       </div>
-//      <p class="paddingp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ipsum ipsa similique cum amet eveniet! Fuga repellendus placeat ad magni nostrum? Nihil voluptatibus a minima distinctio doloribus ut quod itaque?
-//      </p>
-//      </div>
-//      `
-//      const starsContainer= document.querySelector('.stars-container')
-     
-// const CustomerReview=document.querySelector('.CustomerReview')
-// for(let i=0; i<3 ;i++){
-    
-//     for(let j=1 ;j<5 ;j++){
-//     starsContainer.src="../images/rating-star.png"
-//     console.log(i);
-//     }
-//     CustomerReview.innerHTML += `${customerRivewd}`
-
-//     //  fiveStar()
-// }
-// }
-// starsData()
+function fiveStars() {
+    const starsContainer = document.querySelectorAll(".stars-container");
+  
+    const numberOfStars = 5; // عدد النجوم الذي تريده
+    starsContainer.forEach((item) => {
+      for (let i = 0; i < numberOfStars; i++) {
+        const img = document.createElement("img");
+        if (img) {
+          img.src = "../images/rating-star.png";
+        }
+  
+        img.alt = "";
+        item.appendChild(img);
+      }
+    });
+  }
+  fiveStars();
